@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짝사랑 방해금지 | 진청고등학교 이야기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+    <style>
+        body { font-family: "Pretendard", sans-serif; scroll-behavior: smooth; }
+        /* 상단 헤더 배경 수정: 깔끔한 그라데이션과 패턴 느낌으로 변경 */
+        .hero-section { 
+            background: linear-gradient(135deg, #f8faff 0%, #e0e7ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(#3b82f6 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+        .instagram-img { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; }
+        
+        /* 댓글 및 답글 토글 애니메이션을 위한 스타일 */
+        .comment-box { display: none; }
+        .comment-box.active { display: block; }
+        .reply-box { display: none; }
+        .reply-box.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+
+            
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#world" class="hover:text-blue-600 transition">세계관</a>
+                <a href="#characters" class="hover:text-blue-600 transition">등장인물</a>
+                <a href="#campus" class="hover:text-blue-600 transition">학교시설</a>
+                <a href="#instagram" class="hover:text-pink-500 transition">SNS</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section h-[calc(100vh-80px)] min-h-[500px] flex items-center justify-center text-center px-6 pt-20 pb-16">
+        <div class="relative z-10">
+            <div class="w-24 h-24 bg-white rounded-full mb-6 mx-auto overflow-hidden shadow-2xl border-4 border-white transform transition hover:scale-110">
+                <img src='https://raw.githubusercontent.com/hahihuuu/a/refs/heads/main/%EB%A1%9C%EA%B3%A0.jpg' class="w-full h-full object-cover">
+            </div>
+            
+            <span class="bg-blue-600 text-white px-5 py-1.5 rounded-full text-xs font-bold mb-10 inline-block shadow-lg shadow-blue-200 uppercase tracking-wider">2026 신입생들을 진심으로 환영합니다</span>
+            
+            <div class="mb-10 h-26 md:h-20 max-w-xl mx-auto">
+                <img src="https://raw.githubusercontent.com/hahihuuu/jinchung/refs/heads/main/logo.png" alt="짝사랑 방해금지" class="h-full object-contain mx-auto">
+            </div>
+            
+            <div class="space-y-2 mb-8">
+                <p class="text-lg text-gray-600 font-medium">내가 좋아하는 사람 vs 나를 좋아해 주는 사람</p>
+                <h2 class="text-xl font-bold text-blue-900">당신의 선택은?</h2>
+            </div>
+            <a href="#world" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition-all transform hover:-translate-y-1 shadow-xl shadow-blue-100">이야기 시작하기</a>
+        </div>
+    </header>
+
+    <section id="world" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">📓 스토리</h2>
+            <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 leading-relaxed text-gray-600 text-center">
+            <p class="mb-6 italic text-xl text-gray-800">"내가 짝사랑하는 선배,<br>나를 짝사랑하는 후배"</p>
+            <p>언제나 다정하고 상냥한 모범생 선배,<br>
+            나를 향한 마음은 진심인 사고뭉치 후배,<br><br>
+            서툴고 무모한, 그래서 더 아름다운 청춘의 한 페이지를 기록합니다.</p>
+        </div>
+    </section>
+
+    <section id="characters" class="py-24 bg-blue-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-blue-900">👤 등장인물</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="md:col-span-2 bg-white p-8 rounded-3xl border-2 border-blue-200 shadow-xl hover:scale-[1.02] transition">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full mb-4 mx-auto overflow-hidden border-4 border-blue-50"><img src='https://images-ng.pixai.art/gi/thumb/2460acd5-ab25-4036-8a15-78339390831e'> </div>
+                    <h3 class="text-2xl font-bold text-center mb-2">한재윤 (3학년 1반)</h3>
+                    <p class="text-center text-blue-600 font-bold mb-4">"안녕, 유저야. 이제 집 가?"</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">모든 이에게 친절하고 완벽한 진청고 학생회장.<br>성적 전교 3위권, 서인대 의대 목표로 공부 중이다.<br>친구, 후배, 선생님들에게 인기와 지지를 받고 있다.</p>
+                </div>
+                <div class="md:col-span-2 bg-white p-8 rounded-3xl border-2 border-pink-200 shadow-xl hover:scale-[1.02] transition">
+                    <div class="w-24 h-24 bg-pink-100 rounded-full mb-4 mx-auto overflow-hidden border-4 border-pink-50"><img src='https://images-ng.pixai.art/gi/thumb/398dd2ba-b6bc-4c68-8224-0c841885b282'></div>
+                    <h3 class="text-2xl font-bold text-center mb-2">이도하 (1학년 3반)</h3>
+                    <p class="text-center text-pink-600 font-bold mb-4">"누나! 교문 앞에서 기다릴게."</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">무단결석 단골 손님 소문난 사고뭉치.<br>문제아지만 일부 학생들에겐 잘생긴 외모로 인기 있다.<br>소문과 달리 큰 사고 전적은 전무하다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border text-center shadow-sm">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full mb-3 mx-auto overflow-hidden border-4 border-gray-50"><img src='https://images-ng.pixai.art/gi/orig/cf184897-da9a-4ab5-abfb-45fe35bb2394'></div>
+                    <h4 class="font-bold uppercase tracking-wide">이하연 (2학년 1반)</h4>
+                    <p class="text-xs text-blue-500 font-semibold mb-2">유저의 베프</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">유저와 같은 반 친구.<br>털털하고 눈치가 빠르다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border text-center shadow-sm">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full mb-3 mx-auto overflow-hidden border-4 border-gray-50"><img src='https://images-ng.pixai.art/gi/orig/c8b5a2a3-d363-4ccf-99ca-cb26f8eb2f85'></div>
+                    <h4 class="font-bold">한지유 (2학년 4반)</h4>
+                    <p class="text-xs text-blue-500 font-semibold mb-2">진청고 정보통</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">유저와 고1 때 같은 반.<br>소문을 좋아한다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border text-center shadow-sm">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full mb-3 mx-auto overflow-hidden border-4 border-gray-50"><img src='https://images-ng.pixai.art/gi/orig/87e0891a-f5e8-446a-9eb3-54d4251c52c7'></div>
+                    <h4 class="font-bold">강한욱 (1학년 3반)</h4>
+                    <p class="text-xs text-blue-500 font-semibold mb-2">이도하의 절친</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">이도하의 오랜 친구.<br>이도하의 과거를 잘 안다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border text-center shadow-sm">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full mb-3 mx-auto overflow-hidden border-4 border-gray-50"><img src='https://images-ng.pixai.art/gi/orig/613bffa1-639c-4e92-9608-2e13712549b9'></div>
+                    <h4 class="font-bold">김형진 (3학년 2반)</h4>
+                    <p class="text-xs text-blue-500 font-semibold mb-2">학생회 부회장</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">한재윤을 아끼는 친구.<br>이도하를 탐탁지 않아한다.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border text-center shadow-sm md:col-start-2 lg:col-start-auto">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full mb-3 mx-auto overflow-hidden border-4 border-gray-50"><img src='https://images-ng.pixai.art/gi/orig/920ae0e9-946d-449b-857d-b5bc12587deb'></div>
+                    <h4 class="font-bold">박하은 (1학년 2반)</h4>
+                    <p class="text-xs text-blue-500 font-semibold mb-2">학생회 임원</p>
+                    <p class="text-gray-600 text-sm leading-relaxed text-center">한재윤을 짝사랑 중.<br>유저를 경계, 질투한다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="campus" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">✏️ Campus Life</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-3xl border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center"><span class="mr-2">🏫</span> 시설 안내</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-blue-600 mb-2">본관</h4>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li><strong>4F:</strong> 3학년 교실, 자습실</li>
+                                <li><strong>3F:</strong> 2학년 교실, 미술실</li>
+                                <li><strong>2F:</strong> 1학년 교실, 컴퓨터실, 과학실, <span class="text-orange-600">급식실</span></li>
+                                <li><strong>1F:</strong> 교장실, 보건실, <span class="text-blue-600 font-bold text-xs uppercase">매점</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600 mb-2">별관</h4>
+                            <p class="text-sm text-gray-600">체육관, 음악실, 도서관</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-blue-600 mb-2">운동장</h4>
+                            <p class="text-sm text-gray-600">체육 수업, 체육대회 개최지</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-900 text-white p-8 rounded-3xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center"><span class="mr-2">📅</span> 주요 일정</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">03월</div>
+                            <p class="text-sm">입학식 및 새 학기 시작</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">04월</div>
+                            <p class="text-sm">중간고사</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">05월</div>
+                            <p class="text-sm">진청체육대회</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">07월</div>
+                            <p class="text-sm">여름방학</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">08월</div>
+                            <p class="text-sm">개학 및 2학기 시작</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">09월</div>
+                            <p class="text-sm">기말고사</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">09월</div>
+                            <p class="text-sm">전 학년 수학여행</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">11월</div>
+                            <p class="text-sm">대학수학능력시험, 진청고 푸른 빛 축제</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">12월</div>
+                            <p class="text-sm">겨울방학</p>
+                        </div>
+                        <div class="flex items-start space-x-4 border-t border-blue-800 pt-4">
+                            <div class="bg-blue-700 px-3 py-1 rounded text-sm font-bold">2027년 02월</div>
+                            <p class="text-sm">졸업식</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instagram" class="py-24 bg-gray-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm mb-4 mx-auto flex items-center justify-center overflow-hidden">
+                <img src='https://img.freepik.com/premium-vector/instagram-icon_768467-672.jpg?semt=ais_hybrid&w=740&q=80' class="w-8 h-8">
+            </div>
+            <h2 class="text-3xl font-bold mb-2 text-center">Instagram</h2>
+            <p class="text-center text-gray-500 mb-12">진청고등학교 대신 전해드립니다<br>@jinchung_daejeon</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                    <div class="flex items-center p-3 space-x-3 border-b">
+                        <div class="w-8 h-8 rounded-full bg-blue-200 overflow-hidden"><img src='https://github.com/hahihuuu/a/blob/main/%EB%A1%9C%EA%B3%A0.jpg?raw=true'></div>
+                        <span class="font-bold text-xs text-gray-700">jinchung_daejeon</span>
+                    </div>
+                    <img src="https://github.com/hahihuuu/a/blob/main/%EC%A7%84%EB%8C%80%EC%A0%84%202.jpg?raw=true" class="instagram-img">
+                    <div class="p-4 flex-grow">
+                        <p class="text-sm mb-1"><span class="font-bold">jinchung_daejeon</span> 익명 제보. 과한 반응 삭제함~</p>
+                        <button onclick="toggleComments('comments-1')" class="text-xs text-blue-600 font-bold mt-2">댓글 보기...</button>
+                        <div id="comments-1" class="comment-box mt-4 space-y-3 border-t pt-3">
+                            <div>
+                                <p class="text-xs"><b>@yonghxxn:</b> @wxxkk__ 이거 도하 아님?</p>
+                                <button onclick="toggleReply('reply-1-1')" class="text-[10px] text-gray-400 ml-1 font-bold">—— 답글 보기</button>
+                                <div id="reply-1-1" class="reply-box ml-6 mt-2 border-l-2 border-gray-100 pl-3 space-y-2">
+                                    <p class="text-[11px]"><b>@wxxkk__:</b> 야 태그하지 마라</p>
+                                </div>
+                            </div>
+                            <p class="text-xs"><b>@yuuuy_sz:</b> 그래도 잘생겼자나 ㅎㅎ</p>
+                            <p class="text-xs"><b>@woori_0821:</b> ㄹㅇ... 2학년 층이 시끌시끌함 ㅠ</p>
+                            <p class="text-xs"><b>@lullulalla_:</b> 유저 좀 불쌍함....</p>
+                            <p class="text-xs"><b>@dbwlsdl:</b> 핑크 머리 선배 요즘 학교 자주 오던데</p>
+                            <p class="text-xs"><b>@binibi09:</b> 진심 쉬는 시간마다 찾아와서 정병 올 듯</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition border-pink-100 flex flex-col">
+                    <div class="flex items-center p-3 space-x-3 border-b">
+                        <div class="w-8 h-8 rounded-full bg-pink-200 overflow-hidden"><img src='https://github.com/hahihuuu/a/blob/main/%EB%A1%9C%EA%B3%A0.jpg?raw=true'></div>
+                        <span class="font-bold text-xs text-gray-700">jinchung_daejeon</span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/hahihuuu/a/refs/heads/main/%EC%A7%84%EB%8C%80%EC%A0%84%201.jpg" class="instagram-img">
+                    <div class="p-4 flex-grow">
+                        <p class="text-sm mb-1"><span class="font-bold">jinchung_daejeon</span> 얘들아, 누군지 모르는 척해라. 익명이다.</p>
+                        <button onclick="toggleComments('comments-2')" class="text-xs text-blue-600 font-bold mt-2">댓글 보기...</button>
+                        <div id="comments-2" class="comment-box mt-4 space-y-2 border-t pt-3">
+                            <div>
+                                <p class="text-xs"><b>@yuuuy_sz:</b> 헐헐! 이거 유저 얘기잖아! @hi_yeon_</p>
+                                <button onclick="toggleReply('reply-2-1')" class="text-[10px] text-gray-400 ml-1 font-bold">—— 답글 보기</button>
+                                <div id="reply-2-1" class="reply-box ml-6 mt-2 border-l-2 border-gray-100 pl-3 space-y-2">
+                                    <p class="text-[11px]"><b>@hi_yeon_:</b> 미친... 진짜 이도하 돌았네...</p>
+                                    <p class="text-[11px]"><b>@yuuuy_sz:</b> 으아아 재미있다!😆😆</p>
+                                </div>
+                            </div>
+                            <p class="text-xs"><b>@uri_suri08:</b> 이게 이도하가 아니라면... 이도하 뒤집어지는 거 아님?</p>
+                            <p class="text-xs"><b>@ganzi_zaksal:</b> 야 씨 상남자네 ㄷㄷ</p>
+                            <p class="text-xs"><b>@angel_1000:</b> 이거 익명 맞아요? ㅋㅋ...</p>
+                            <p class="text-xs"><b>@wxxkk__:</b> 하... 진짜 미친놈...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                    <div class="flex items-center p-3 space-x-3 border-b">
+                        <div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden"><img src='https://github.com/hahihuuu/a/blob/main/%EB%A1%9C%EA%B3%A0.jpg?raw=true'></div>
+                        <span class="font-bold text-xs text-gray-700">jinchung_daejeon</span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/hahihuuu/a/refs/heads/main/%EC%A7%84%EB%8C%80%EC%A0%84%203.jpg" class="instagram-img">
+                    <div class="p-4 flex-grow">
+                        <p class="text-sm mb-1"><span class="font-bold">jinchung_daejeon</span> 학생회장 인기 뭐냐. ㄷㄷ</p>
+                        <button onclick="toggleComments('comments-3')" class="text-xs text-blue-600 font-bold mt-2">댓글 보기...</button>
+                        <div id="comments-3" class="comment-box mt-4 space-y-2 border-t pt-3">
+                            <p class="text-xs"><b>@kyujini_0420:</b> ?? 엥? 뭐임? 선배 내 건데 ㅠㅠ</p>
+                            <p class="text-xs"><b>@luvely_lulu:</b> @subini__ 이거 너가 보냈지? ㅋㅋ</p>
+                            <p class="text-xs"><b>@zero_one_ww:</b> 학생회장 개부럽네... 다 가졌잖아</p>
+                            <p class="text-xs"><b>@kkkhjin:</b> 오, 한재윤~ 역시. ㅋㅋㅋ @jaeyoon_han</p>
+                            <div>
+                                <p class="text-xs"><b>@yuuuy_sz:</b> 헉!! 누구야! 혹시 1학년 학생회 걔??</p>
+                                <button onclick="toggleReply('reply-3-1')" class="text-[10px] text-gray-400 ml-1 font-bold">—— 답글 보기</button>
+                                <div id="reply-3-1" class="reply-box ml-6 mt-2 border-l-2 border-gray-100 pl-3 space-y-2">
+                                    <p class="text-[11px]"><b>@hi_yeon:</b> 야 한지유! 카톡이나 봐라</p>
+                                    <p class="text-[11px]"><b>@yuuuy_sz:</b> 미안~ 지금 볼게!</p>
+                                </div>
+                            </div>
+                            <p class="text-xs"><b>@hi_yeon_:</b> 박하! 회장 선배 인기 미쳤음 ㄷㄷ @haeuniii</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white border-t text-center">
+        <div class="text-blue-600 font-bold mb-4 tracking-tighter text-xl">진청고등학교 홈페이지</div>
+        <p class="text-gray-400 text-xs">© 2026 Winter Rabbit. 모든 인물과 사건은 픽션입니다.</p>
+    </footer>
+
+    <script>
+        // 댓글 열기/닫기 스크립트
+        function toggleComments(id) {
+            const commentBox = document.getElementById(id);
+            commentBox.classList.toggle('active');
+            const btn = commentBox.previousElementSibling;
+            btn.innerText = commentBox.classList.contains('active') ? '댓글 접기' : '댓글 보기...';
+        }
+
+        // 답글 열기/닫기 스크립트 (추가됨!)
+        function toggleReply(id) {
+            const replyBox = document.getElementById(id);
+            replyBox.classList.toggle('active');
+            const btn = replyBox.previousElementSibling;
+            btn.innerText = replyBox.classList.contains('active') ? '—— 답글 숨기기' : '—— 답글 보기';
+        }
+    </script>
+</body>
+</html>
